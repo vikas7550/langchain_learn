@@ -1226,6 +1226,15 @@ wheels = [
 ]
 
 [[package]]
+name = "jsonpath-python"
+version = "1.1.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/98/18/4ca8742534a5993ff383f7602e325ce2d5d7cc93d72ac5e1cdedbea8a458/jsonpath_python-1.1.6.tar.gz", hash = "sha256:dded9932b4ec41fb8726e09c83afa4e6be618f938c2db287cc2a81723c639671", size = 88178, upload-time = "2026-05-07T01:26:34.482Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/55/8a/1270a6803bd821cbfcdda387eaa13cb41a7b1f7b9bd145979b3bfb9d6cb7/jsonpath_python-1.1.6-py3-none-any.whl", hash = "sha256:a1c50afd8d3fbbaf47a4873bc890dcb3c15da96f5c020327977d844d8731a2d4", size = 14453, upload-time = "2026-05-07T01:26:33.306Z" },
+]
+
+[[package]]
 name = "jsonpointer"
 version = "3.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1627,6 +1636,19 @@ wheels = [
 ]
 
 [[package]]
+name = "langchain-openrouter"
+version = "0.2.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "langchain-core" },
+    { name = "openrouter" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/8c/c3/aef363ffe2060c8fba59eb94cb7d12bc9dec059b5f41bfea37f9267b65f7/langchain_openrouter-0.2.3.tar.gz", hash = "sha256:51da9fef8cc065662ab8493c86207039705e721f5086ee603bcb8a456e64dbcb", size = 163923, upload-time = "2026-05-01T21:59:41.977Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a8/80/82428fdb830d0ff04522f9c4a2d830f54fc309d49f8b8945ca1b5b8d22a3/langchain_openrouter-0.2.3-py3-none-any.whl", hash = "sha256:8fafa4dd2682d6e96135b0affde134ae992dd69b0315dd08ed1707d4cf83f896", size = 23373, upload-time = "2026-05-01T21:59:40.724Z" },
+]
+
+[[package]]
 name = "langchain-protocol"
 version = "0.0.15"
 source = { registry = "https://pypi.org/simple" }
@@ -1855,6 +1877,7 @@ source = { editable = "." }
 dependencies = [
     { name = "ipykernel" },
     { name = "ipywidgets" },
+    { name = "jsonpath-python" },
     { name = "jupyterlab" },
     { name = "langchain" },
     { name = "langchain-anthropic" },
@@ -1865,6 +1888,7 @@ dependencies = [
     { name = "langchain-mcp-adapters" },
     { name = "langchain-model-profiles" },
     { name = "langchain-openai" },
+    { name = "langchain-openrouter" },
     { name = "langchain-tavily" },
     { name = "langchain-text-splitters" },
     { name = "langgraph" },
@@ -1872,6 +1896,7 @@ dependencies = [
     { name = "langgraph-cli" },
     { name = "langsmith" },
     { name = "mcp" },
+    { name = "openrouter" },
     { name = "pypdf" },
     { name = "python-dotenv" },
     { name = "scipy" },
@@ -1884,6 +1909,7 @@ dependencies = [
 requires-dist = [
     { name = "ipykernel", specifier = ">=7.1.0" },
     { name = "ipywidgets", specifier = ">=8.1.8" },
+    { name = "jsonpath-python", specifier = ">=1.1.6" },
     { name = "jupyterlab", specifier = ">=4.5.7" },
     { name = "langchain", specifier = ">=1.1.3" },
     { name = "langchain-anthropic", specifier = ">=1.0.3" },
@@ -1894,6 +1920,7 @@ requires-dist = [
     { name = "langchain-mcp-adapters", specifier = ">=0.1.13" },
     { name = "langchain-model-profiles", specifier = ">=0.0.4" },
     { name = "langchain-openai", specifier = ">=1.1.14" },
+    { name = "langchain-openrouter", specifier = ">=0.2.3" },
     { name = "langchain-tavily", specifier = ">=0.2.13" },
     { name = "langchain-text-splitters", specifier = ">=1.1.2" },
     { name = "langgraph", specifier = ">=1.0.3" },
@@ -1901,6 +1928,7 @@ requires-dist = [
     { name = "langgraph-cli", specifier = ">=0.4.9" },
     { name = "langsmith", specifier = ">=0.8.5" },
     { name = "mcp", specifier = ">=1.21.1" },
+    { name = "openrouter", specifier = ">=0.10.0" },
     { name = "pypdf", specifier = ">=6.12.0" },
     { name = "python-dotenv", specifier = ">=1.2.0" },
     { name = "scipy", specifier = ">=1.16.3" },
@@ -2269,6 +2297,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/d7/91/2a06c4e9597c338cac1e5e5a8dd6f29e1836fc229c4c523529dca387fda8/openai-2.26.0.tar.gz", hash = "sha256:b41f37c140ae0034a6e92b0c509376d907f3a66109935fba2c1b471a7c05a8fb", size = 666702, upload-time = "2026-03-05T23:17:35.874Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c6/2e/3f73e8ca53718952222cacd0cf7eecc9db439d020f0c1fe7ae717e4e199a/openai-2.26.0-py3-none-any.whl", hash = "sha256:6151bf8f83802f036117f06cc8a57b3a4da60da9926826cc96747888b57f394f", size = 1136409, upload-time = "2026-03-05T23:17:34.072Z" },
+]
+
+[[package]]
+name = "openrouter"
+version = "0.11.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpcore" },
+    { name = "httpx" },
+    { name = "jsonpath-python" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b7/31/a98dbb4fb2a81b2a7273a08547a0ad64de1e1da6864919a9e564165adff5/openrouter-0.11.0.tar.gz", hash = "sha256:e1338b64dbbb191b6d5c94f383e290d51f114856c519b3962d41aaea9da4de78", size = 352895, upload-time = "2026-06-30T20:15:29.403Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d1/79/dbdd53e245b1931db6981eee3df5cd086d58ae16a7d9b34baef67e85023a/openrouter-0.11.0-py3-none-any.whl", hash = "sha256:bd10ff0cd6e8eb7c71d5d944922220eb4e7f490f16dbb16b1bec1d134789987c", size = 787561, upload-time = "2026-06-30T20:15:27.54Z" },
 ]
 
 [[package]]

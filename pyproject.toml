@@ -29,6 +29,9 @@ dependencies = [
     "langsmith>=0.8.5",
     "langchain-core>=1.3.3",
     "jupyterlab>=4.5.7",
+    "jsonpath-python>=1.1.6",
+    "langchain-openrouter>=0.2.3",
+    "openrouter>=0.10.0",
 ]
 
 [build-system]
